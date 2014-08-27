@@ -15,7 +15,19 @@
 
   <!-- ios -->
   <platform name="ios">
+    <!-- first clobber the values, to work around bug: https://issues.apache.org/jira/browse/CB-4731 -->
     <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations">
+      <string>CLOBBER</string>
+    </config-file>
+
+    <!-- then set the actual value-->
+    <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations">
+      <array>
+	<string>UIInterfaceOrientationPortrait</string>
+	<string>UIInterfaceOrientationLandscapeLeft</string>
+	<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	<string>UIInterfaceOrientationLandscapeRight</string>
+      </array>
     </config-file>
   </platform>
   

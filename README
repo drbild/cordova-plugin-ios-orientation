@@ -1,0 +1,11 @@
+This plugin enables all screen rotations for both iPhones and iPads.
+By default, Cordova (3.5) locks to right-side-up-portrait on iPhones,
+but supports all four rotations on iPad.
+
+The "Orientation" preference in config.xml is supposed to control this
+behavior, but is currently (Cordova 3.5) broken, at least for iOS.
+
+This plugin contains no behavior, but serves only to modify the iOS
+*.plist file that specifies that allowed rotations. (Phonegap allows
+such configuration via config.xml, but Cordova does not. Only plugins
+can modify that file.)
