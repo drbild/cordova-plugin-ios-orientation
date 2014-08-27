@@ -1,0 +1,22 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.willbild.cordova.ios-orientation"
+	version="0.1.0-dev">
+
+  <name>iOS Orientation</name>
+  <description>Cordova iOS Orientation Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,ios,orientation</keywords>
+  <repo>https://github.com/drbild/cordova-plugin-ios-orientation.git</repo>
+  <issue>https://github.com/drbild/cordova-plugin-ios-orientation/issues</issue>
+  
+  <engines>
+    <engine name="cordova" version="&gt;=3.4.0" />
+  </engines>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations">
+    </config-file>
+  </platform>
+  
+</plugin>
